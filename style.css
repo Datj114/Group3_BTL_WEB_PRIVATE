@@ -88,7 +88,10 @@ nav {
     justify-content: space-around;
 }
 .logo {
-    width: 25vw;
+    width: 20vw;
+}
+nav .menu {
+    padding-top: 6px;
 }
 li {
     list-style: none;
@@ -170,14 +173,6 @@ nav a div {
 main {
     padding-bottom: 15px;
 }
-/* @media (max-height: 50px) {
-    nav {
-        position: fixed;
-        background-color: white;
-        width: 100vw;
-        top: 0;
-    }
-} */
 
 /* phần cuối trang */
 
