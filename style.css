@@ -140,9 +140,6 @@ nav .search-bar > i {
     height: 59px;
 }
 
-.search-bar:hover nav .search-bar .search-bar-content {
-    display: flex;
-}
 nav .search-bar .search-bar-content {
     display: none;
     position: absolute;
@@ -151,6 +148,9 @@ nav .search-bar .search-bar-content {
     left: -62px;
     border: 2px solid hsla(0, 0%, 80%, 0.85);
     background-color: white;
+}
+.search-bar:hover .x {
+    display: flex;
 }
 nav a {
     color: black;
@@ -283,7 +283,26 @@ a:hover {
 li > .language {
     display: none;
 }
+
+.menu > i {
+    display: none;
+}
+.menu ul > i {
+    display: none;
+}
+.menu ul .search-used {
+    display: none;
+}
 @media (max-width: 575px) {
+    .menu > i {
+        display: block;
+    }
+    .menu ul > i {
+        display: block;
+    }
+    .menu ul .search-used {
+        display: block;
+    }
     nav > .language {
         display: none;
     }
@@ -296,16 +315,16 @@ li > .language {
     .header {
         display: none;
     }
-    .menu ul {
+    .menu > ul {
         height: 100vh;
         flex-direction: column;
         background-color: hsla(0, 0%, 100%, 0.95);
         bottom: 0;
-        box-shadow: 0 0 10px 0 rgba(33, 18, 18, 0.5);
+        box-shadow: 164px 0 10px 0 rgba(33, 18, 18, 0.5);
         left: 0;
         position: fixed;
         top: 0;
-        transform: translateX(-270px);
+        transform: translateX(-500px);
         transition: transform 0.8s;
         width: 260px;
     }
@@ -318,9 +337,9 @@ li > .language {
     .nav-list > i {
         position: fixed;
         top: 0;
-        right: -142px;
+        right: -122px;
         padding: 10px;
-        font-size: 30px;
+        font-size: 35px;
         height: 40px;
         font-style: normal;
         width: 40px;
@@ -341,4 +360,28 @@ li > .language {
         left: 61px;
         width: 230px;
     }
+    .search-bar:hover .x {
+        display: flex;
+        left: -170px;
+        padding: 10px;
+    }
+    nav .menu .nav-list .nav-item .sub-nav-product {
+        position: static;
+    }
+    .language ul {
+        position: absolute;
+        border: none;
+        display: none;
+        top: 295px;
+        right: 37px;
+    }
+    .menu ul .search-used {
+        padding: 9px;
+    }
+}
+nav.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
 }
