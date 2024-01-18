@@ -321,7 +321,6 @@ li > .language {
         position: fixed;
         top: 0;
         transform: translateX(-500px);
-        /* transition: transform 0.5s; */
         width: 260px;
         box-shadow: 164px 0 10px 0 rgba(33, 18, 18, 0.5);
     }
