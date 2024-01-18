@@ -308,18 +308,17 @@ li > .language {
     .header {
         display: none;
     }
-    .menu > ul {
+     .menu > ul {
         height: 100vh;
         flex-direction: column;
         background-color: hsla(0, 0%, 97%, 0.95);
         bottom: 0;
-        box-shadow: 164px 0 10px 0 rgba(33, 18, 18, 0.5);
-
         left: 0;
         position: fixed;
         top: 0;
         transform: translateX(-500px);
         width: 260px;
+        box-shadow: 164px 0 10px 0 rgba(33, 18, 18, 0.5);
     }
     .menu ul > div {
         padding: 20px 10px;
@@ -338,6 +337,7 @@ li > .language {
         width: 40px;
         cursor: pointer;
     }
+    
     .menu > i {
         position: absolute;
         right: 266px;
