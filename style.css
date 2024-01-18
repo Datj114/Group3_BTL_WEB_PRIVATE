@@ -314,11 +314,11 @@ li > .language {
         background-color: hsla(0, 0%, 97%, 0.95);
         bottom: 0;
         box-shadow: 164px 0 10px 0 rgba(33, 18, 18, 0.5);
+
         left: 0;
         position: fixed;
         top: 0;
         transform: translateX(-500px);
-        transition: transform 0.8s;
         width: 260px;
     }
     .menu ul > div {
