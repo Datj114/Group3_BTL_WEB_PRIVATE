@@ -11,63 +11,6 @@ img {
     height: auto;
     max-width: 100vw; /* Đảm bảo hình ảnh không vượt quá kích thước thực của nó */
 }
-#about-us h1 {
-    color: #679a06;
-    font-family: Roboto, sans-serif;
-    text-align: center;
-    padding: 45px 0;
-}
-#about-us p {
-    padding: 0 20%;
-    padding-bottom: 20px;
-
-    text-align: center;
-    line-height: 1.6em;
-}
-#about-us .content {
-    display: flex;
-    justify-content: space-around;
-}
-#about-us .img-content {
-    padding: 40px 0;
-}
-.chair {
-    width: 40vw;
-    height: auto;
-}
-#about-us .content .right p {
-    text-align: left;
-    max-width: 50vw;
-}
-#about-us .content .right .p1 {
-    border-left: 2px solid #679a06;
-    padding-left: 5%;
-}
-#about-us .content .right {
-    padding-top: 10vw;
-}
-#about-us .content .right .p2 {
-    padding: 0 0;
-}
-@media (max-width: 575px) {
-    #about-us .content {
-        display: inline;
-    }
-
-    .chair {
-        width: 100%;
-        height: auto;
-    }
-    #about-us .content .right {
-        padding-left: 15px;
-    }
-    #about-us .content .right p {
-        text-align: left;
-        max-width: 100vw;
-    }
-}
-/* phần đầu trang
- */
 .header {
     display: flex;
     justify-content: space-around;
@@ -288,7 +231,6 @@ li > .language {
     display: none;
 }
 /* reponsive  */
-
 @media (max-width: 575px) {
     .menu > i {
         display: block;
@@ -311,6 +253,7 @@ li > .language {
     .header {
         display: none;
     }
+
     .menu > ul {
         height: 100vh;
         flex-direction: column;
@@ -321,7 +264,7 @@ li > .language {
         position: fixed;
         top: 0;
         transform: translateX(-500px);
-        /* transition: transform 0.5s; */
+        transition: transform 0.5s;
         width: 260px;
         box-shadow: 164px 0 10px 0 rgba(33, 18, 18, 0.5);
     }
