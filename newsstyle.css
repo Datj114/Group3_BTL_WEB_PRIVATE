@@ -11,6 +11,10 @@ body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.padding-right-zero{
+    padding-right: 0 !important;
+}
+
 .flex-row{
     flex-direction: column;
 }
@@ -66,11 +70,13 @@ nav .menu .nav-list .nav-item {
 }
 nav .menu .nav-list .have-subnav {
     position: relative;
+    display: flex;
+    align-items: center;
 }
 nav .menu .nav-list .nav-item .sub-nav-product {
     display: none;
     font-weight: normal;
-    top: 38px;
+    top: 60px;
     left: 0px;
     background-color: white;
     width: 235px;
@@ -96,10 +102,6 @@ nav .menu .nav-list .nav-item .sub-nav-product li:hover {
 }
 nav .search-bar {
     position: relative;
-}
-nav .search-bar > i {
-    padding-top: 19px;
-    height: 59px;
 }
 
 nav .search-bar .search-bar-content {
