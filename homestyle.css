@@ -51,7 +51,7 @@ nav {
     z-index: 999;
 }
 .logo {
-    margin-left: 80px;
+    margin-top: 12px;
     width: 20vw;
 }
 nav .menu {
@@ -63,6 +63,7 @@ li {
 nav .menu .nav-list {
     padding-top: 3px;
     display: flex;
+    z-index: 10;
 }
 nav .menu .nav-list .nav-item {
     font-weight: bold;
@@ -102,6 +103,7 @@ nav .menu .nav-list .nav-item .sub-nav-product li:hover {
 }
 nav .search-bar {
     position: relative;
+    margin-right: 20px;
 }
 
 nav .search-bar .search-bar-content {
@@ -230,6 +232,7 @@ main {
 
 .header-content > h2{
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .overlay{
@@ -449,7 +452,8 @@ li > .language {
     nav .logo {
         position: relative;
         top: 9px;
-        left: 61px;
+        left: 100px;
+        margin-top: 0;
         width: 230px;
     }
     .search-bar:hover .x {
@@ -472,6 +476,7 @@ li > .language {
     }
     .menu ul .search-used {
         padding: 24px;
+        display: flex;
     }
     .menu ul .search-used input {
         padding: 8px;
@@ -482,12 +487,43 @@ li > .language {
     nav .menu .nav-list .nav-item .sub-nav-product li {
         background-color: hsla(0, 0%, 97%, 0.95);
     }
+
+    .language{
+        display: none;
+    }
+
+    nav{
+        justify-content: space-between;
+    }
+
+    .header-container > .header-content{
+        top: 12% !important;
+        left: 6% !important;
+    }
+
+    .show-list{
+        flex-direction: column;
+        margin-left: 40px !important;
+    }
+    .show-item{
+        width: 100%;
+        margin: 16px 0;
+    }
+
+    .content-item{
+        width: 40%;
+    }
+
+    .container-list{
+        margin: 0;
+    }
 }
 nav.sticky {
     position: fixed;
     top: 0;
     width: 100%;
     background-color: white;
+    padding-bottom: 12px;
 }
 
 @media screen and (max-width:1024px) {
@@ -498,5 +534,10 @@ nav.sticky {
 
     .header-img {
         height: auto;
+    }
+
+    .header-container > .header-content{
+        left: 33%;
+        top: 16%;
     }
 }
