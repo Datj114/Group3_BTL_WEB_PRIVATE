@@ -1,5 +1,7 @@
 
 
+
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 * {
     font-family: Roboto, sans-serif;
@@ -62,7 +64,6 @@ nav .menu .nav-list .nav-item .sub-nav-product {
     width: 235px;
     position: absolute;
     border: 2px solid hsla(0, 0%, 80%, 0.85);
-    z-index: 999;
 }
 nav .menu .nav-list .have-subnav:hover .sub-nav-product {
     display: block;
@@ -104,6 +105,8 @@ nav .search-bar .search-bar-content {
 nav a {
     color: black;
     display: flex;
+}
+.language a {
     padding: 20px;
 }
 .name {
@@ -125,10 +128,9 @@ main {
 footer {
     display: flex;
     background-color: hsla(0, 0%, 95%, 0.9);
-    
-    /* position: absolute;
-    bottom: -750px;*/
-    width: 100%; 
+    position: absolute;
+    width: 100%;
+    bottom: -830px;
 }
 .footer-container .footer-title {
     color: #679a06;
@@ -160,9 +162,9 @@ footer div ul li {
     display: flex;
     justify-content: center;
     padding: 15px;
-    /* position: absolute;
-    bottom: -820px;
-    width: 100%; */
+    position: absolute;
+    bottom: -900px;
+    width: 100%;
 }
 .footer-by a img {
     padding: 4px 7px;
@@ -261,18 +263,20 @@ li > .language {
     .header {
         display: none;
     }
+
     .menu > ul {
         height: 100vh;
         flex-direction: column;
         background-color: hsla(0, 0%, 97%, 0.95);
         bottom: 0;
-        box-shadow: 164px 0 10px 0 rgba(33, 18, 18, 0.5);
+
         left: 0;
         position: fixed;
         top: 0;
         transform: translateX(-500px);
-        transition: transform 0.8s;
+        transition: transform 0.5s;
         width: 260px;
+        box-shadow: 164px 0 10px 0 rgba(33, 18, 18, 0.5);
     }
     .menu ul > div {
         padding: 20px 10px;
@@ -342,7 +346,6 @@ nav.sticky {
     top: 0;
     width: 100%;
     background-color: white;
-    
 }
 .slider{
     display: none;
