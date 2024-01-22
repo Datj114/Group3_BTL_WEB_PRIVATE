@@ -197,6 +197,7 @@ a {
     padding-left: 15px;
 }
 nav {
+    z-index: 1;
     display: flex;
     justify-content: space-around;
 }
