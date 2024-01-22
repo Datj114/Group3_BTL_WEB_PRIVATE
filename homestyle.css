@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+hr{
+    border-bottom:1px solid #000;
+}
+
 body{
     scroll-behavior: smooth;
     overflow-x: hidden;
